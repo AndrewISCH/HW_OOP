@@ -30,7 +30,7 @@ public class Team
         Console.WriteLine("Team: " + name);
         foreach (Worker worker in workers)
         {
-            Console.WriteLine(worker.Name + " - " + worker.Position);
+            Console.WriteLine(worker.Name + " - " + worker.Position + " - " + worker.Workday);
         }
     }
 }

@@ -5,7 +5,9 @@ class Program
     public static void Main()
     {
         Worker dev = new Developer("Andrew");
-        Worker manager = new Manager("Daniel");
+        dev.FillWorkDay();
+        Worker manager = new Manager("Misha");
+        manager.FillWorkDay();
         Team team = new("Project Team");
         team.AddNewMember(dev);
         team.AddNewMember(manager);

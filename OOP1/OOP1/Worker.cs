@@ -4,6 +4,7 @@ public abstract class Worker
 {
     public string Name { get; }
     public string? Position { get; protected set; }
+    public string? Workday;
     
     protected Worker(string name)
     {
@@ -12,17 +13,17 @@ public abstract class Worker
 
     protected void Call()
     {
-        Console.WriteLine("call...");
+        Workday += 'C';
     }
 
     protected void WriteCode()
     {
-        Console.WriteLine("write code....");
+        Workday += 'W';
     }
 
     protected void Relax()
     {
-        Console.WriteLine("relaxing...");   
+        Workday += 'R';
     }
 
     public abstract void FillWorkDay();
